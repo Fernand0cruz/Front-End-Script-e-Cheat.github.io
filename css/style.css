@@ -157,7 +157,6 @@ header {
 
 .new-information {
   width: 100%;
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,18 +171,17 @@ header {
 
 .new-information .news {
   margin: 10px;
-  border-radius: 25px;
   width: 50%;
   height: 100%;
-  background-color: darkgreen;
+  text-align: center;
+  color: black;
+  padding: 20px;
 }
 
 .new-information .intro {
   margin: 10px;
-  border-radius: 25px;
   width: 50%;
   height: 100%;
-  background-color: darkgreen;
 }
 
 @media screen and (max-width: 980px) {
@@ -192,7 +190,6 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
   }
   .new-information .news {
     width: 100%;
