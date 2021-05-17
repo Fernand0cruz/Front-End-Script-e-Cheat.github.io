@@ -2,18 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
 }
 header{
     width: 100%;
-
     background-color: black;
-
     // backdrop-filter: blur(20px);
-
     padding: 10px 20px;
-
     position: fixed;
     top: 0;
     z-index: 999;
@@ -22,9 +16,7 @@ header{
     max-width: 95%;
     // border: 1px solid red;
     margin: 0 auto;
-
     padding: 0 20px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,67 +31,47 @@ header{
 .Btn-Menu{
     width: 40px;
     height: 40px;
-
-    background-color: transparent;
-    border-radius: 5px;
     border: 0;
     // border: solid 1px white;
-
     position: relative;
     cursor: pointer;
-
     display: none;
-
 }
 .Btn-Menu::after{
     content: '';
-
     position: absolute;
     top: 30%;
     left: 15%;
-
     width: 70%;
     height: 10%;
     border-radius: 20px;
-
     background-color: #ffffff;
-
     transition: .5s ease;
 }
 .Btn-Menu::before{
     content: '';
-
     position: absolute;
     top: 60%;
     left: 45%;
-
     width: 40%;
     height: 10%;
     border-radius: 20px;
-
     background-color: #ffffff;
-
     transition: .5s ease;
 }
 #Btn-Menu:checked ~ label .Btn-Menu:after{
-    // background-color: blueviolet;
     transform: rotate(225deg);
-
     top: 45%;
     left: 15%;
 }
 #Btn-Menu:checked ~ label .Btn-Menu:before{
-    // background-color: blueviolet;
     transform: rotate(-400deg);
-
     width: 70%;
-
     top: 45%;
     left: 15%;
 }
 .menu{
     list-style: none;
-
     display: flex;
     align-items: center;
     li{
@@ -117,7 +89,6 @@ header{
         }
     }
 }
-
 @media screen and (max-width: 980px){
     .Btn-Menu{
         display: block;
@@ -127,38 +98,28 @@ header{
         position: fixed;
         top: 0;
         right: 0;
-    
         height: 100vh;
         margin: 0;
-        
         background-color: rgba(17, 17, 17, 0.8);
         backdrop-filter: blur(20px);
-
         width: 100%;
         max-width: 250px;
-
         padding: 100px 20px;
-
         flex-direction: column;
-
         transition: .5s ease;
     }
     .menu.active{
         right: -100%;
     }
 }
-
-
 .banner{
     width: 100%;
     height: 50vh;
-    background-color: darkcyan;
+    background-color: brown;
     // img{}
 }
-
 .new-information{
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -182,23 +143,17 @@ header{
        flex-direction: column;
     }
     .new-information .news{
-        
         width: 100%;
         height: 100%;
-        
     }
     .new-information .intro{
-        
         width: 100%;
         height: 100%;
-        
     }
 }
 .tabPanel{
     display: none;
 }
-
-
 .buttonContainer{
     width: 100%;
     background-color: rgb(0, 0, 0);

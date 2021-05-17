@@ -9,4 +9,4 @@ function showPanel (Index, color) {
     tabPanels[Index].style.backgroundColor = color;
 
 }
-showPanel(0,'rgb(226, 43, 211)');
+showPanel(0,'black');
