@@ -17,7 +17,7 @@ header {
 }
 
 .navbar {
-  max-width: 1200px;
+  max-width: 95%;
   margin: 0 auto;
   padding: 0 20px;
   display: -webkit-box;
@@ -201,14 +201,18 @@ header {
   }
 }
 
-.navbar2 {
+.tabPanel {
+  display: none;
+}
+
+.buttonContainer {
   width: 100%;
   background-color: black;
   padding: 10px 20px;
 }
 
-.nav2 {
-  max-width: 1000px;
+.buttons {
+  max-width: 95%;
   margin: 0 auto;
   padding: 0 20px;
   display: -webkit-box;
@@ -222,22 +226,23 @@ header {
           align-items: center;
 }
 
-.nav2 li a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #ffffff;
+.buttonContainer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
   font-size: 20px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
-.nav2 li a:hover {
+.buttonContainer button:hover {
   color: #636363;
 }
 
 @media screen and (max-width: 980px) {
-  .nav2 {
+  .buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
